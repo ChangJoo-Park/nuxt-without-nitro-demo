@@ -5,14 +5,14 @@
       "src": "nuxt.config.js",
       "use": "@nuxtjs/vercel-builder",
       "config": {
-        "serverFiles": ["server/**/*"]
+        "serverFiles": ["server/**"]
       }
     }
   ],
   "routes": [
     {
-      "src": "/api/hello",
-      "dest": "/api/hello.js?id=$id",
+      "src": "/api/hello/(?<id>[^/]+)",
+      "dest": "/api/hello/[id].js?id=$id",
       "methods": ["GET", "OPTIONS"],
       "headers": {
         "Access-Control-Allow-Methods": "GET",
