@@ -2,6 +2,7 @@
 
 Technical demo for nuxt without demo. Original demo is [here](https://github.com/nuxt/nitro-demo).
 
+Please see the awesome [slide](https://docs.google.com/presentation/d/137PNjV93KWAb7yrftSt-oDb2pVYbAJhv7IxTfW70Tzc/edit) made by [Daniel Roe](https://github.com/danielroe).
 
 ## Build Setup
 
