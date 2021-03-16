@@ -1,8 +1,9 @@
-import { createApp } from 'h3'
-const app = createApp()
-app.use('/', (_req, res) => {
+import express from 'express'
+// import { createApp } from 'h3'
+const app = express()
+app.get('/', (_req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*')
-  return { api: 'works!' }
+  res.json({ api: 'works!' })
 })
 
 export default app
