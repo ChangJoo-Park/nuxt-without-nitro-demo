@@ -35,9 +35,9 @@ export default {
   async asyncData (ctx) {
     const origin = ORIGINS[process.env.NITRO_PRESET] ?? ORIGINS.default
     const path = '/api/hello'
-    const [directTime] = await timer(ctx.$http.$get(path))
+    const [directTime] = await timer(ctx.$axios.$get(path))
     const url = origin + path
-    const [urlTime] = await timer(ctx.$http.$get(url))
+    const [urlTime] = await timer(ctx.$axios.$get(url))
 
     return {
       directTime,
