@@ -1,4 +1,4 @@
-import { createApp, setCookie } from 'h3'
+import { createApp } from 'h3'
 const app = createApp()
 
 app.use('/', (_req, res) => {
