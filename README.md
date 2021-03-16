@@ -4,6 +4,10 @@ Technical demo for nuxt without demo. Original demo is [here](https://github.com
 
 Please see the awesome [slide](https://docs.google.com/presentation/d/137PNjV93KWAb7yrftSt-oDb2pVYbAJhv7IxTfW70Tzc/edit) made by [Daniel Roe](https://github.com/danielroe).
 
+## WARN
+
+api tab is broken by server middleware, I will find the solution :)
+
 ## Build Setup
 
 ```bash
