@@ -1,5 +1,8 @@
 # nuxt-without-nitro-demo
 
+Technical demo for nuxt without demo. Original demo is [here](https://github.com/nuxt/nitro-demo).
+
+
 ## Build Setup
 
 ```bash
