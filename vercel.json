@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/vercel-builder",
+      "config": {
+        "serverFiles": ["server/**"]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/hello/(?<id>[^/]+)",
+      "dest": "/api/hello/[id].js?id=$id",
+      "methods": ["GET", "OPTIONS"],
+      "headers": {
+        "Access-Control-Allow-Methods": "GET",
+        "Access-Control-Allow-Headers": "Content-Type"
+      }
+    }
+  ]
+}
